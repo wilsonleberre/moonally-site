@@ -304,6 +304,7 @@ section {
 .card h3 {
   font-size: 1.15rem;
   margin-bottom: 10px;
+  font-weight: 900;
 }
 
 .card p {
