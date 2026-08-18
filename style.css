@@ -2,6 +2,8 @@
    MoonAlly — shared stylesheet
    ========================================================================== */
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:wght@400;500&display=swap');
+
 :root {
   --navy: #273143;
   --sage: #708e92;
@@ -32,8 +34,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4 {
-  font-family: "Playfair Display", Georgia, serif;
+h1, h2, h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 300;
+  color: var(--navy);
+  margin: 0 0 0.5em;
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: Georgia, serif;
   color: var(--navy);
   margin: 0 0 0.5em;
   line-height: 1.2;
@@ -107,11 +117,13 @@ img {
   transform: translateY(-50%);
   display: flex;
   gap: 28px;
-  font-size: 0.95rem;
-  font-weight: 500;
 }
 
 .site-header .header-nav a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.7px;
+  text-transform: uppercase;
   color: var(--navy);
   transition: color 0.2s ease;
 }
@@ -526,6 +538,9 @@ section {
 }
 
 .site-footer a {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.7px;
   color: var(--gold);
 }
 
