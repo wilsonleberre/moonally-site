@@ -240,6 +240,47 @@ img {
   margin: 0 auto;
 }
 
+.hero-product {
+  position: relative;
+  width: min(380px, 78%);
+  margin: 44px auto 40px;
+}
+
+.hero-product::before {
+  content: "";
+  position: absolute;
+  inset: -18%;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.32) 0%, rgba(201, 169, 110, 0) 68%);
+  filter: blur(6px);
+  z-index: 0;
+}
+
+.hero-product-img {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  background: var(--white);
+  border-radius: 20px;
+  padding: 22px;
+  box-shadow:
+    0 30px 60px rgba(0, 0, 0, 0.35),
+    0 8px 20px rgba(0, 0, 0, 0.2),
+    0 0 0 1px rgba(201, 169, 110, 0.35);
+}
+
+@media (max-width: 640px) {
+  .hero-product {
+    width: min(280px, 82%);
+    margin: 32px auto 28px;
+  }
+
+  .hero-product-img {
+    padding: 16px;
+    border-radius: 16px;
+  }
+}
+
 /* ---------- Sections ---------- */
 
 section {
