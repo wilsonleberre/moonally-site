@@ -299,14 +299,10 @@ section {
   font-size: 0.95rem;
 }
 
-/* icon card placeholders */
+/* icon card icons */
 
-.icon-placeholder {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  background: var(--bg);
-  border: 2px solid var(--gold);
+.icon-svg {
+  display: block;
   margin: 0 auto 18px;
 }
 
