@@ -196,8 +196,8 @@ section.tight { padding: clamp(56px, 6vw, 84px) 0; }
 .feature svg { width: 36px; height: 36px; stroke: var(--sand-2); margin-bottom: 20px; }
 .feature h3 { font-size: 24px; font-weight: 600; margin-bottom: 10px; }
 .feature p { font-size: 15.5px; line-height: 1.55; }
-.features .visual .media { height: 100%; min-height: 420px; }
-@media (max-width: 960px) { .features .layout { grid-template-columns: 1fr; } .features .visual .media { min-height: 0; aspect-ratio: 3 / 2; } }
+.features .visual .media { height: 100%; min-height: 420px; aspect-ratio: auto; width: 100%; }
+@media (max-width: 960px) { .features .layout { grid-template-columns: 1fr; } .features .visual .media { min-height: 0; height: auto; aspect-ratio: 3 / 2; } }
 @media (max-width: 560px) { .features .cards { grid-template-columns: 1fr; } }
 
 /* ---------- Film + steps ---------- */
